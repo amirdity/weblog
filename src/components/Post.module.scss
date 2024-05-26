@@ -1,0 +1,49 @@
+$bgcolor: #9c7eee;
+$textAuthor: #543280;
+$wtf: #ffffff;
+.post {
+  background-color: $bgcolor;
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  animation: animate-in 1s ease-out forwards;
+}
+.author {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: $textAuthor;
+  margin: 0;
+  text-transform: uppercase;
+}
+.text {
+  white-space: pre-wrap;
+  font-size: 1.25rem;
+  margin: 0.25rem 0 0 0;
+  color: $textAuthor;
+  font-style: italic;
+}
+.posts {
+  list-style: none;
+  max-width: 50rem;
+  margin: 1rem auto;
+  padding: 1rem 0;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 30%);
+  justify-content: center;
+}
+.form{
+  background-color: $bgcolor;
+  padding: 1rem;
+  width: 20rem;
+  margin: 2rem auto;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+.form label{
+  display: block;
+  margin-bottom: 0.05rem;
+  color: $wtf;
+  font-weight: bold;
+}
